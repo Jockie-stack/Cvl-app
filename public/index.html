@@ -1222,7 +1222,7 @@
                 <span class="badge badge-primary">${escapeHtml(i.status)}</span>
               </div>
               <div class="idea-content">${escapeHtml(i.text).replaceAll("\n","<br>")}</div>
-              <div class="idea-date">${escapeHtml(new Date(i.created_at).toLocaleString(\"fr-FR\"))}</div>
+              <div class="idea-date">${escapeHtml(new Date(i.created_at).toLocaleString("fr-FR"))}</div>
             </div>
           `).join("");
         } catch (e) {
