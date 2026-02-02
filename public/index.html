@@ -955,8 +955,11 @@
       // =======================
       // Config
       // =======================
-    require('dotenv').config();
-      const API_BASE = ""; // same origin. If backend is on another domain, set it here.
+      // IMPORTANT: dotenv ne fonctionne pas dans le navigateur.
+      // Si ton backend est sur un autre service Render, mets son URL ici (ex: https://mon-backend.onrender.com).
+      // Si ton backend est sur le même domaine que le front, laisse API_BASE vide.
+          const API_BASE = "https://cvl-app.onrender.com";
+      // const API_BASE = "";
       const LS = {
         DEVICE_ID: "cvl_device_id",
         USER_VOTE: "cvl_user_vote"
